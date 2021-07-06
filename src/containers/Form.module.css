@@ -1,0 +1,100 @@
+body {
+    background-image: url(https://fotooboi-spb.ru/media/k2/items/cache/f203d630ce0c3265f9c9461092194e6b_XL.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    justify-content: center;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container div {
+    margin: 20px 10px;
+}
+
+.with_error_message {
+    justify-content: center;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.field_params {
+    width: 100%;
+    justify-content: center;
+    margin: 30px 10px;
+}
+
+.error_container {
+    display: flex;
+}
+
+.error_field {
+    font-size: 25px;
+    border-radius: 4px;
+    width: 70%;
+    color: #cf0043;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.icon {
+    padding-right: 10px;
+    color: #cf0043;
+    font-size: 23px;
+}
+
+label {
+    font-family: 'Akaya Kanadaka', cursive;
+    color: black;
+    font-size: 32px;
+    margin: 10px;
+    display: block;
+}
+
+option {
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 20px;
+}
+
+.params  {
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    border-color: #ffffff;
+    margin: 0 30px;
+
+}
+
+.invalid {
+    border-color: #cf0043;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        justify-content: center;
+        display: block;
+    }
+
+    .field_params {
+        margin: 0;
+        padding: 0;
+        display: table;
+        position: relative;
+    }
+
+    .field_params input {
+        margin: 10px auto;
+    }
+
+    .error_field {
+        text-align: center;
+    }
+
+
+}
