@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../containers/Form.module.css"
+import classes from "../../containers/Form.module.css"
 
 function Input({ label, name, register, options, errors }) {
     return (

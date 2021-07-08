@@ -1,4 +1,4 @@
-import classes from "../containers/Form.module.css"
+import classes from "../../containers/Form.module.css"
 import React from "react";
 
 function DateInput({ label, min, name, register, options, errors }) {

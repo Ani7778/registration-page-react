@@ -1,5 +1,5 @@
-import classes from "../components/Checkbox.module.css";
-import classOfInput from "../containers/Form.module.css"
+import classes from "./Checkbox.module.css";
+import classOfInput from "../../containers/Form.module.css"
 
 function Checkbox({ label, name, register, errors }) {
     return (

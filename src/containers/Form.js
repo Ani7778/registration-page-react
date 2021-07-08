@@ -1,25 +1,17 @@
 import React from "react";
 import classes from '../containers/Form.module.css';
 import { useForm } from "react-hook-form";
-import Input from "../components/Input";
-import Password from "../components/Password";
-import DateInput from "../components/DateInput";
-import Dropdown from "../components/Dropdown";
-import Checkbox from "../components/Checkbox";
-import RegisterButton from "../components/RegisterButton";
-import ErrorMessage from "../components/ErrorMessage";
+import Input from "../components/inputs/Input";
+import Password from "../components/password/Password";
+import DateInput from "../components/date-input/DateInput";
+import Dropdown from "../components/dropdown/Dropdown";
+import Checkbox from "../components/checkbox/Checkbox";
+import RegisterButton from "../components/register-button/RegisterButton";
+import ErrorMessage from "../components/error-message/ErrorMessage";
+import validateEmail from "../utils/validateEmail";
 
 function Form() {
     const {register, handleSubmit, formState: {errors}, getValues} = useForm();
-
-    const validateEmail = (value) => {
-        const emailRegex = /\w+@\w+\.\w+/;
-        return emailRegex.test(value);
-    }
-
-    const confirmPassword = (value) => {
-        return (value === getValues().password);
-    }
 
     return (
         <form
@@ -127,7 +119,7 @@ function Form() {
                     options={
                         {
                             required: true,
-                            validate: confirmPassword
+                            validate: value => value === getValues().password
                         }
                     }
                     register={register}

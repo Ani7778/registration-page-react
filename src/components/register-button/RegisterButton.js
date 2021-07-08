@@ -1,4 +1,4 @@
-import classes from "../components/RegisterButton.module.css";
+import classes from "./RegisterButton.module.css";
 
 function RegisterButton() {
     return (

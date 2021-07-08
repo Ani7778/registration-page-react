@@ -1,7 +1,7 @@
 import React from "react";
 import {faExclamationTriangle} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import classes from "../containers/Form.module.css"
+import classes from "../../containers/Form.module.css"
 
 function ErrorMessage({message}) {
     return (
